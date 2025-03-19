@@ -8,7 +8,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      const response = await fetch('/api/parseJWT');
+      const response = await fetch('/api/user/parseJWT');
       const data = await response.json();
       setUser(data);
     };

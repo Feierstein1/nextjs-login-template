@@ -7,7 +7,7 @@ export default function Logout() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('/api/logout', { method: 'POST' });
+      const response = await fetch('/api/user/logout', { method: 'POST' });
 
       if (response.ok) {
         router.push('/unauth/login');
